@@ -2,9 +2,9 @@ import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 // import { BooksModule } from './books/books.module'; old
-import { BooksModule } from './workers/book';
+import { BooksModule } from './modules/book';
 import { DatabaseModule } from './database/database.module';
-import { AuthorModule } from './workers/author/author.module';
+import { AuthorModule } from './modules/author/author.module';
 import { ConfigModule } from '@nestjs/config';
 import config from './config/config';
 import { DatabaseService } from './database/database.service';

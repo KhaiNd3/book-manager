@@ -2,7 +2,7 @@ import { CommandHandler, ICommandHandler, CommandBus } from '@nestjs/cqrs';
 import { DatabaseService } from 'src/database/database.service';
 import { CreateBookCommand } from './create-book.command';
 import { returnRes } from './response.dto';
-import { CreateGenreCommand } from 'src/workers/genre/application/createGenres/create-genres.command';
+import { CreateGenreCommand } from 'src/modules/genre/application/createGenres/create-genres.command';
 
 @CommandHandler(CreateBookCommand)
 export class CreateBookHandler implements ICommandHandler<CreateBookCommand> {
